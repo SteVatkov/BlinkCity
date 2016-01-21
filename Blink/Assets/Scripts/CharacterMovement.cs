@@ -22,7 +22,7 @@ public class CharacterMovement : MonoBehaviour {
 		rb.velocity = new Vector2(dx * speed,dy * speed);
 		var mousePos = Input.mousePosition;
 		mousePos.z = 10;
-		if (Input.GetMouseButtonDown(0)){
+		if (Input.GetMouseButtonUp(0)){
 			transform.position = Camera.main.ScreenToWorldPoint(mousePos);
 		}
 	}
