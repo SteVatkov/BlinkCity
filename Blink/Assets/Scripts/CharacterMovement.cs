@@ -29,6 +29,7 @@ public class CharacterMovement : MonoBehaviour {
 		//animator.SetFloat("MoveX",dx);
 		//animator.SetFloat("MoveY",dy);
 		animator.SetFloat("Move",dxy);
+		animator.SetBool ("MousePressed", Input.GetMouseButton (0));
 
 		var mousePos = Input.mousePosition;
 		mousePos.z = 10;
