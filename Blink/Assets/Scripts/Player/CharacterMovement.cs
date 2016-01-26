@@ -52,4 +52,10 @@ public class CharacterMovement : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+	void OnTriggerOverlap (Collider2D other) {
+		if (other.tag == "Enemy") {
+			speed = 0;
+		}
+	}
 }
