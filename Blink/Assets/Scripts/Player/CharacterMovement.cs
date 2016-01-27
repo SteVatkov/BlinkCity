@@ -6,6 +6,8 @@ public class CharacterMovement : MonoBehaviour {
 	[HideInInspector] public bool facingRight = true;
 	private float dx;
 	private float dy;
+	private float x;
+	private float y;
 	private float dxy;
 	public float speed;
 	private Rigidbody2D rb;
@@ -25,9 +27,11 @@ public class CharacterMovement : MonoBehaviour {
 		dy = Input.GetAxis("Vertical");
 		rb.velocity = new Vector2(dx * speed,dy * speed);
 
-		dxy = dx + dy;
-		//animator.SetFloat("MoveX",dx);
-		//animator.SetFloat("MoveY",dy);
+		//Grabs hor and ver input values, turns them into positive numbers, then adds them together to play the walk cycle anytime the player has directional input.
+		//PROBABLY have to redo later, must be a better way to do it.
+		x = dx * dx;
+		y = dy * dy;
+		dxy = x + y;
 		animator.SetFloat("Move",dxy);
 		animator.SetBool ("MousePressed", Input.GetMouseButton (0));
 
