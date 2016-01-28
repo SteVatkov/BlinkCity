@@ -9,7 +9,7 @@ public class CharacterMovement : MonoBehaviour {
 	private float dxy;
 	public float speed;
 	private Rigidbody2D rb;
-	public bool inside;
+	private 
 
 	Animator animator;
 
@@ -52,5 +52,10 @@ public class CharacterMovement : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-		
+
+	void OnTriggerOverlap (Collider2D other) {
+		if (other.tag == "Enemy") {
+			speed = 0;
+		}
+	}
 }
