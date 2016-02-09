@@ -317,6 +317,7 @@ GameObject:
   - 95: {fileID: 825262801}
   - 114: {fileID: 825262802}
   - 114: {fileID: 825262803}
+  - 58: {fileID: 825262804}
   m_Layer: 0
   m_Name: Destruct
   m_TagString: Enemy
@@ -330,10 +331,10 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825262797}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -420,9 +421,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df7c4a9386659fd4cab16280b3858030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  facingRight: 1
   target: {fileID: 1965286912}
   speed: 1
-  DistanceFromTarget: 5
+  DistanceFromTarget: 7
+--- !u!58 &825262804
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825262797}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.02, y: -0.04}
+  serializedVersion: 2
+  m_Radius: 0.49
 --- !u!1 &843424541
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +449,7 @@ GameObject:
   - 4: {fileID: 843424542}
   - 61: {fileID: 843424543}
   - 114: {fileID: 843424544}
+  - 58: {fileID: 843424545}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -458,7 +475,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 843424541}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -478,6 +495,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 825262797}
+--- !u!58 &843424545
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 843424541}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.5
 --- !u!1 &1010991586
 GameObject:
   m_ObjectHideFlags: 0
