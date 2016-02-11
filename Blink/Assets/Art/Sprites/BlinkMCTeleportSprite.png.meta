@@ -1,0 +1,382 @@
+fileFormatVersion: 2
+guid: d1262a5e8a472f241ae3a51241f5c41f
+timeCreated: 1455154708
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BlinkMCTeleportSprite_0
+    21300002: BlinkMCTeleportSprite_1
+    21300004: BlinkMCTeleportSprite_2
+    21300006: BlinkMCTeleportSprite_3
+    21300008: BlinkMCTeleportSprite_4
+    21300010: BlinkMCTeleportSprite_5
+    21300012: BlinkMCTeleportSprite_6
+    21300014: BlinkMCTeleportSprite_7
+    21300016: BlinkMCTeleportSprite_8
+    21300018: BlinkMCTeleportSprite_9
+    21300020: BlinkMCTeleportSprite_10
+    21300022: BlinkMCTeleportSprite_11
+    21300024: BlinkMCTeleportSprite_12
+    21300026: BlinkMCTeleportSprite_13
+    21300028: BlinkMCTeleportSprite_14
+    21300030: BlinkMCTeleportSprite_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: 4
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BlinkMCTeleportSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 18}
+        - {x: -12, y: 16}
+        - {x: -12, y: -3}
+        - {x: -11, y: -12}
+        - {x: -4, y: -18}
+        - {x: 9, y: -18}
+        - {x: 11, y: -13}
+        - {x: 11, y: 18}
+    - name: BlinkMCTeleportSprite_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 88
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 19}
+        - {x: -10, y: 14}
+        - {x: -12, y: 9}
+        - {x: -12, y: -14}
+        - {x: -5, y: -17}
+        - {x: 11, y: -17}
+        - {x: 11, y: 12}
+        - {x: 10, y: 19}
+    - name: BlinkMCTeleportSprite_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 88
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 20}
+        - {x: -4, y: 20}
+        - {x: -12, y: 12}
+        - {x: -12, y: -13}
+        - {x: -5, y: -15}
+        - {x: 8, y: -15}
+        - {x: 11, y: -12}
+        - {x: 11, y: 11}
+        - {x: 7, y: 19}
+    - name: BlinkMCTeleportSprite_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 88
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 20}
+        - {x: -12, y: 15}
+        - {x: -12, y: -6}
+        - {x: -10, y: -10}
+        - {x: -3, y: -14}
+        - {x: 6, y: -14}
+        - {x: 11, y: -11}
+        - {x: 11, y: 17}
+        - {x: 7, y: 20}
+    - name: BlinkMCTeleportSprite_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 88
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 20}
+        - {x: -12, y: 18}
+        - {x: -12, y: -12}
+        - {x: -8, y: -14}
+        - {x: 5, y: -14}
+        - {x: 12, y: -11}
+        - {x: 12, y: 12}
+        - {x: 6, y: 20}
+    - name: BlinkMCTeleportSprite_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 88
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 20}
+        - {x: -12, y: 15}
+        - {x: -12, y: -6}
+        - {x: -10, y: -14}
+        - {x: 9, y: -14}
+        - {x: 13, y: -12}
+        - {x: 13, y: 12}
+        - {x: 11, y: 20}
+    - name: BlinkMCTeleportSprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -12, y: 18}
+        - {x: -12, y: -12}
+        - {x: -6, y: -15}
+        - {x: 14, y: -15}
+        - {x: 14, y: 15}
+        - {x: 7, y: 20}
+    - name: BlinkMCTeleportSprite_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 48
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 20}
+        - {x: -12, y: 12}
+        - {x: -12, y: -9}
+        - {x: -7, y: -14}
+        - {x: 4, y: -14}
+        - {x: 13, y: -10}
+        - {x: 14, y: -8}
+        - {x: 14, y: 6}
+        - {x: 8, y: 20}
+    - name: BlinkMCTeleportSprite_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 20}
+        - {x: -12, y: 14}
+        - {x: -12, y: -9}
+        - {x: -9, y: -13}
+        - {x: 14, y: -13}
+        - {x: 14, y: 15}
+        - {x: 7, y: 20}
+    - name: BlinkMCTeleportSprite_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 48
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 20}
+        - {x: -12, y: -11}
+        - {x: -8, y: -14}
+        - {x: 3, y: -14}
+        - {x: 13, y: -8}
+        - {x: 13, y: 3}
+        - {x: 11, y: 11}
+        - {x: 6, y: 19}
+        - {x: 5, y: 20}
+    - name: BlinkMCTeleportSprite_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 0}
+        - {x: -11, y: -7}
+        - {x: -4, y: -15}
+        - {x: 3, y: -15}
+        - {x: 14, y: -9}
+        - {x: 14, y: 1}
+        - {x: 8, y: 20}
+        - {x: -3, y: 20}
+        - {x: -12, y: 12}
+    - name: BlinkMCTeleportSprite_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 48
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: -12}
+        - {x: -7, y: -14}
+        - {x: 3, y: -14}
+        - {x: 15, y: -8}
+        - {x: 15, y: 7}
+        - {x: 14, y: 12}
+        - {x: 11, y: 20}
+        - {x: -5, y: 20}
+        - {x: -12, y: 18}
+    - name: BlinkMCTeleportSprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 20}
+        - {x: -12, y: 16}
+        - {x: -12, y: -9}
+        - {x: -5, y: -13}
+        - {x: 7, y: -13}
+        - {x: 14, y: -7}
+        - {x: 14, y: 11}
+        - {x: 9, y: 20}
+    - name: BlinkMCTeleportSprite_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 20}
+        - {x: -12, y: 14}
+        - {x: -12, y: -11}
+        - {x: -7, y: -14}
+        - {x: 9, y: -14}
+        - {x: 14, y: -8}
+        - {x: 14, y: 15}
+        - {x: 7, y: 20}
+    - name: BlinkMCTeleportSprite_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 8
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -15}
+        - {x: 5, y: -15}
+        - {x: 13, y: -11}
+        - {x: 13, y: 10}
+        - {x: 10, y: 20}
+        - {x: 0, y: 20}
+        - {x: -12, y: 16}
+        - {x: -12, y: -10}
+    - name: BlinkMCTeleportSprite_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 8
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 20}
+        - {x: -3, y: 20}
+        - {x: -12, y: 15}
+        - {x: -12, y: -9}
+        - {x: -5, y: -14}
+        - {x: 8, y: -14}
+        - {x: 13, y: -7}
+        - {x: 13, y: 10}
+        - {x: 12, y: 13}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
