@@ -7,8 +7,8 @@ public class Explode : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D other) {
 		if (other.tag == "Player") {
-			
 			Destroy (enemy);
+
 		}
 	}
 

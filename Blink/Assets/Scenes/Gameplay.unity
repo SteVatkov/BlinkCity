@@ -447,12 +447,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 843424542}
-  - 61: {fileID: 843424543}
   - 114: {fileID: 843424544}
   - 58: {fileID: 843424545}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,20 +468,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 825262800}
   m_RootOrder: 0
---- !u!61 &843424543
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 843424541}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.2}
-  serializedVersion: 2
-  m_Size: {x: 9, y: 10}
 --- !u!114 &843424544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,6 +789,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   speed: 4
+  Energy: 100
+  RegenRate: 10
+  Inside: 0
 --- !u!61 &1965286917
 BoxCollider2D:
   m_ObjectHideFlags: 0

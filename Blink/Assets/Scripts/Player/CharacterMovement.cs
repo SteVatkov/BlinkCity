@@ -11,7 +11,12 @@ public class CharacterMovement : MonoBehaviour {
 	private float dxy;
 	public float speed;
 	private Rigidbody2D rb;
-	private 
+	public float Energy = 100;
+	private float EnergyUsed = 60;
+	private float MaxEn = 100;
+	private float MinEn = 0;
+	public float RegenRate = 10f;
+	public bool Inside = false;
 
 	Animator animator;
 
@@ -27,6 +32,9 @@ public class CharacterMovement : MonoBehaviour {
 		dy = Input.GetAxis("Vertical");
 		rb.velocity = new Vector2(dx * speed,dy * speed);
 
+		gameObject.GetComponent<BoxCollider2D> ().isTrigger = false;
+		speed = 4;
+
 		//Grabs hor and ver input values, turns them into positive numbers, then adds them together to play the walk cycle anytime the player has directional input.
 		//PROBABLY have to redo later, must be a better way to do it.
 		x = dx * dx;
@@ -37,8 +45,24 @@ public class CharacterMovement : MonoBehaviour {
 
 		var mousePos = Input.mousePosition;
 		mousePos.z = 10;
-		if (Input.GetMouseButtonUp(0)){
-			transform.position = Camera.main.ScreenToWorldPoint(mousePos);
+		// Energy regenerates by RegenRate when below max value
+		if (Energy < MaxEn) {
+			Energy += RegenRate * Time.deltaTime;
+		}
+		// Cannot blink if not enough energy
+		if (Energy >= EnergyUsed) {
+			if (Input.GetMouseButtonUp (0)) {
+				transform.position = Camera.main.ScreenToWorldPoint (mousePos);
+				Energy = Energy - EnergyUsed;
+			}
+		}
+		// Energy cannot exceed max value
+		if (Energy > MaxEn) {
+			Energy = MaxEn;
+		}
+		// Energy cannot exceed min value
+		if (Energy < MinEn) {
+			Energy = MinEn;
 		}
 
 		//Flips it according to value of dx
@@ -46,6 +70,13 @@ public class CharacterMovement : MonoBehaviour {
 			Flip();
 		else if (dx > 0 && facingRight)
 			Flip();
+
+		if (Inside == true) {
+			Debug.Log ("Hello");
+			gameObject.GetComponent<BoxCollider2D> ().isTrigger = true;
+			speed = 0;
+		}
+
 	}
 
 	//Handles flipping of sprite
@@ -57,9 +88,15 @@ public class CharacterMovement : MonoBehaviour {
 		transform.localScale = theScale;
 	}
 
-	void OnTriggerOverlap (Collider2D other) {
+	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "Enemy") {
-			speed = 0;
+			Inside = true;
+		} 
+	}
+
+	void OnTriggerExit2D(Collider2D other) {
+		if (other.tag == "Enemy") {
+			Inside = false;
 		}
 	}
 }
