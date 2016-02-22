@@ -792,6 +792,7 @@ MonoBehaviour:
   Energy: 100
   RegenRate: 10
   Inside: 0
+  EnterIsDone: 0
 --- !u!61 &1965286917
 BoxCollider2D:
   m_ObjectHideFlags: 0
