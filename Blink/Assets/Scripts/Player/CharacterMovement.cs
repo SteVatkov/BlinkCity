@@ -18,6 +18,7 @@ public class CharacterMovement : MonoBehaviour {
 	public float RegenRate = 10f;
 	public bool Inside = false;
 	public bool EnterIsDone = false;
+	private bool enoughEnergy;
 
 	Animator animator;
 
@@ -43,6 +44,7 @@ public class CharacterMovement : MonoBehaviour {
 		dxy = x + y;
 		animator.SetFloat("Move",dxy);
 		animator.SetBool ("MousePressed", Input.GetMouseButton (0));
+		animator.SetBool ("EnoughEnergy" , enoughEnergy);
 
 
 		// Energy regenerates by RegenRate when below max value
@@ -51,13 +53,9 @@ public class CharacterMovement : MonoBehaviour {
 		}
 		// Cannot blink if not enough energy
 		if (Energy >= EnergyUsed) {
-			if (Input.GetMouseButtonUp (0)) {
-				//if(EnterIsDone == true){
-				//Teleport();
-				Energy = Energy - EnergyUsed;
-				//}
-			}
+			enoughEnergy = true;
 		}
+		else enoughEnergy = false;
 		// Energy cannot exceed max value
 		if (Energy > MaxEn) {
 			Energy = MaxEn;
@@ -73,6 +71,7 @@ public class CharacterMovement : MonoBehaviour {
 		else if (dx > 0 && facingRight)
 			Flip();
 
+		Debug.Log(Energy);
 		if (Inside == true) {
 			Debug.Log ("Hello");
 			gameObject.GetComponent<BoxCollider2D> ().isTrigger = true;
@@ -86,6 +85,7 @@ public class CharacterMovement : MonoBehaviour {
 		var mousePos = Input.mousePosition;
 		mousePos.z = 10;
 		transform.position = Camera.main.ScreenToWorldPoint (mousePos);
+		Energy = Energy - EnergyUsed;
 	}
 
 	//Handles flipping of sprite
